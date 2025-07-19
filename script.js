@@ -17,7 +17,8 @@ button.onclick = function getday(){
    }else{
    result.innerHTML = `${input.value} is ${alldays[day]}`;
    joke.innerHTML = jokes[Math.floor(Math.random() * 10)]
-   button.innerHTML = 'Try another date'
+   button.innerHTML = 'Try another date';
+   button.style.backgroundColor = '#347d49'
    button.onclick = function(){
       location.reload();
    }
